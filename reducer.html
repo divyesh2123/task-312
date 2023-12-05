@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let data = [2,3,22,2,3,4,3,22,2];
+        
+        console.log(data.push(3));
+
+        console.log(data);
+        
+
+     let d=    data.reduceRight(function(pre,value,index) {
+
+        if(pre.includes(value) == false)
+        {
+            pre.push(value);
+        }
+
+        return pre;
+
+          
+        },[]);
+
+
+        console.log(d);
+
+    </script>
+    
+</body>
+</html>
